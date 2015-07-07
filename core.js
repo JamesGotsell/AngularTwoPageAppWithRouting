@@ -14,3 +14,8 @@ module.config(['$routeProvider', function($routeProvider){
       redirectTo: '/'
   });
 }]);
+
+module.controller("RouteController", function($scope, $routeParams){
+  $scope.param = $routeParams.param;
+})
+
